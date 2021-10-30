@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Arvo', serif;
+        }
+        #full_page {
+            display: flex;
+            height: 750px;
+        }
+
+        #left_part {
+            width: 65vw;
+            flex: 29%;
+            width: 30%;
+            position: fixed;
+            height: 750px;
+            border: 2px solid black;
+        }
+
+        #right_part {
+            flex: 69%;
+            height: 750px;
+            /* border:2px solid black; */
+            position: relative;
+            left: -458px;
+        }
+
+        #nav_bar {
+            width: 100%;
+            height: 10%;
+            background: linear-gradient(to right, rgb(66, 195, 238), rgb(141, 155, 173));
+            position: relative;
+            left: 459px;
+        }
+
+        #first_p1 {
+            display: inline-block;
+            position: absolute;
+            left: 131px;
+            top: 47px;
+        }
+
+        #first_h1 {
+            position: absolute;
+            left: 68px;
+            top: -12px;
+        }
+
+        #cbitlogo {
+            width: 65px;
+        }
+
+        #query {
+            position: absolute;
+            left: 687px;
+            top: 135px;
+            border: 3px solid black;
+            z-index: 3;
+            background: transparent;
+
+
+        }
+
+        #post-btn {
+            position: absolute;
+            left: 687px;
+            top: 370px;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 10px;
+            color: white;
+            background-color: goldenrod;
+            z-index: 3;
+        }
+
+        #post-btn:hover {
+            background-color: gold;
+            color: crimson;
+        }
+
+        #QAimg {
+            position: absolute;
+            height: 537px;
+            left: 640px;
+            opacity: 0.2;
+        }
+
+        .main {
+            border: solid 2px green;
+            width: 35vw;
+            height: 90vh;
+            z-index: 7;
+        }
+
+        .collapsible {
+            background-color: rgb(156, 11, 11);
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active,
+        .collapsible:hover {
+            background-color: rgba(27, 13, 221, 0.76);
+        }
+
+        .collapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+
+        ul {
+            list-style-type: none;
+            /* Remove bullets */
+            padding: 0;
+            /* Remove padding */
+            margin: 0;
+            /* Remove margins */
+        }
+
+        ul li {
+            border: 1px solid #ddd;
+            /* Add a thin border to each list item */
+            margin-top: -1px;
+            /* Prevent double borders */
+            background-color: #f6f6f6;
+            /* Add a grey background color */
+            padding: 12px;
+            /* Add some padding */
+        }
+        #login{
+            position: absolute;
+            left: 1334px;
+            top: 23px;
+        }
+        #login a{
+            padding: 3px;
+            font-size: 21px;
+            text-decoration: none;
+            color: ghostwhite;
+            border: 2px solid rgb(98, 36, 156);
+            border-radius: 5px;
+        }
+        #login a:hover{
+            text-decoration: none;
+            background-color: wheat;
+            color: rgb(156, 11, 11);
+            border: 2px solid rgb(156, 11, 11);
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="full_page">
+
+
+        <div class="main">
+            <h2 style="text-align: center; position: relative;">SELECT SEM</h2>
+
+
+            <button class="collapsible">SEMESTER 1</button>
+            <div class="content">
+                <ul>
+                    <a href="">
+                        <li>C Programming</li>
+                    </a>
+                    <a href="">
+                        <li>Optics and SemiConductor Physics</li>
+                    </a>
+                    <a href="">
+                        <li>Mathematics-1</li>
+                    </a>
+                    <a href="">
+                        <li>AutoCad</li>
+                    </a>
+                </ul>
+            </div>
+            <button class="collapsible">SEMESTER 2</button>
+            <div class="content">
+                <ul>
+                    <a href="">
+                        <li>OOPS through Python</li>
+                    </a>
+                    <a href="">
+                        <li>DSA in Python</li>
+                    </a>
+                    <a href="">
+                        <li>Chemistry</li>
+                    </a>
+                    <a href="">
+                        <li>Mathematics-2</li>
+                    </a>
+                </ul>
+            </div>
+            <button class="collapsible">SEMESTER 3</button>
+            <div class="content">
+                <ul>
+                    <a href="">
+                        <li>OOPS through Java</li>
+                    </a>
+                    <a href="">
+                        <li>DBMS</li>
+                    </a>
+                    <a href="">
+                        <li>DMA</li>
+                    </a>
+                    <a href="">
+                        <li>DLCA</li>
+                    </a>
+                </ul>
+            </div>
+            <button class="collapsible">SEMESTER 4</button>
+            <div class="content">
+                <ul>
+                    <a href="">
+                        <li>Design And Analysis of Algorithms</li>
+                    </a>
+                    <a href="">
+                        <li>Automata Theory and
+Compiler Design</li>
+                    </a>
+                    <a href="">
+                        <li>Software Engineering</li>
+                    </a>
+                    <a href="">
+                        <li>Engineering Economics &
+Accountancy</li>
+                    </a>
+                </ul>
+            </div>
+            <button class="collapsible">SEMESTER 5</button>
+            <div class="content">
+                <ul>
+                    <a href="">
+                        <li>Operating Systems</li>
+                    </a>
+                    <a href="">
+                        <li>Computer Networks</li>
+                    </a>
+                    <a href="">
+                        <li>UNIX and Shell Programming</li>
+                    </a>
+                    <a href="">
+                        <li>Computer Graphics </li>
+                    </a>
+                </ul>
+            </div>
+            <button class="collapsible">SEMESTER 6</button>
+            <div class="content">
+                <ul>
+                    <a href="">
+                        <li>Artificial Intelligence</li>
+                    </a>
+                    <a href="">
+                        <li>Information Security</li>
+                    </a>
+                    <a href="">
+                        <li>Indian Traditional
+Knowledge</li>
+                    </a>
+                    <a href="">
+                        <li>Indian Constitution</li>
+                    </a>
+                </ul>
+            </div>
+            <button class="collapsible">SEMESTER 7</button>
+            <div class="content">
+                <ul>
+                    <a href="">
+                        <li>Big Data Analytics</li>
+                    </a>
+                    <a href="">
+                        <li>Embedded Systems</li>
+                    </a>
+                    <a href="">
+                        <li>Internet Of Things</li>
+                    </a>
+                    <a href="">
+                        <li>Distributed Systems</li>
+                    </a>
+                </ul>
+            </div>
+            <button class="collapsible">SEMESTER 8</button>
+            <div class="content">
+                <ul>
+                    <a href="">
+                        <li>Abc</li>
+                    </a>
+                    <a href="">
+                        <li>Abc</li>
+                    </a>
+                    <a href="">
+                        <li>Abc</li>
+                    </a>
+                    <a href="">
+                        <li>Abc</li>
+                    </a>
+                </ul>
+            </div>
+            <script>
+                let questions = [];
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.maxHeight) {
+                            content.style.maxHeight = null;
+                        } else {
+                            content.style.maxHeight = content.scrollHeight + "px";
+                        }
+                    });
+                }
+            </script>
+        </div>
+
+        <div id="right_part">
+            <div id="nav_bar">
+                <div>
+                    <img src="cbit_logo.png" alt="" id="cbitlogo">
+                </div>
+                <h1 id="first_h1">CBIT StackOverflow</h1>
+                <p id="first_p1">Swayam Tejaswan Bhava</p>
+            </div>
+
+            <div>
+                <!-- <form action="">
+                    
+                     <div id="msg">
+                        <pre></pre>
+                    </div>
+                </form> -->
+                <textarea name="" id="query" placeholder="Question Everything over here.." cols="80" rows="10">
+
+                </textarea>
+                <div>
+                    <button type="submit" id="post-btn">POST</button>
+                </div>
+            </div>
+
+            <div>
+                <img src="QAicon.png" alt="" id="QAimg">
+            </div>
+            <div id="login">
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>
+
+<!-- 
+
+    <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    
+</style>
+</head>
+<body>
+
+</body>
+</html>
+ -->
